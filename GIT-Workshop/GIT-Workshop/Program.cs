@@ -10,7 +10,12 @@ namespace GIT_Workshop
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Type something...\n");
+            printOnScreen( Console.ReadLine().ToString());
+        }
+       static void printOnScreen(string str)
+        {
+            Console.WriteLine("Hello World! " + str);
             Console.ReadKey();
         }
     }
